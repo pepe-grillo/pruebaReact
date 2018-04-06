@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Principal from './componentes/Principal';
 import ListaIndicadores from './componentes/lista_indicadores';
 import PruebaGrafica from './componentes/prueba_grafica';
-import PruebaGrafica2 from './componentes/prueba_grafica2';
 import './App.css';
 
 class App extends Component {

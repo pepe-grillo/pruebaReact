@@ -16,12 +16,14 @@ class ListaIndicadores extends Component {
         <div className="ListaIndicadores">
             <table border="1">
                 <caption>Lista de Indicadores</caption>
-                <tr>
-                    <th>Indicador</th>
-                    <th>Nombre</th>
-                    <th>Valor</th>
-                </tr>
-                {reg_indicador}
+                <tbody>
+                    <tr>
+                        <th>Indicador</th>
+                        <th>Nombre</th>
+                        <th>Valor</th>
+                    </tr>
+                    {reg_indicador}
+                </tbody>
             </table>
         </div>
     )

@@ -17,12 +17,14 @@ class ListaArticulos extends Component{
             <div className="ListaArticulos">
                 <table border="1">
                     <caption>Lista de Artículos</caption>
-                    <tr>
-                        <th>Artículo</th>
-                        <th>Descripción</th>
-                        <th>Cantidad</th>
-                    </tr>
-                    {art_reg}
+                    <tbody>
+                        <tr>
+                            <th>Artículo</th>
+                            <th>Descripción</th>
+                            <th>Cantidad</th>
+                        </tr>
+                        {art_reg}
+                    </tbody>
                 </table>
             </div>
         )
