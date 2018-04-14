@@ -8,7 +8,7 @@ class ListaArticulos extends Component{
         if(this.props.param_articulos){
              art_reg = this.props.param_articulos.map(articulo =>{
                  return(
-                     <Articulo key={articulo.codigo} articulo={articulo}/>
+                     <Articulo key={articulo.codigo} articulo={articulo} elimArticulo={this.props.elimArticulo}/>
                  );
              });
         }

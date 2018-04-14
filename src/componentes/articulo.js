@@ -15,10 +15,15 @@ class Articulo extends Component{
                     {this.props.articulo.cantidad}
                 </td>
                 <td>
-                    <input type="button" value="X"/>
+                    <input type="button" onClick={this.manejaELimArticulo.bind(this)} value="X"/>
                 </td> 
             </tr>
         )
+    }
+
+    manejaELimArticulo(e){
+        this.props.elimArticulo(this.props.articulo);
+        e.preventDefault();
     }
 }
 

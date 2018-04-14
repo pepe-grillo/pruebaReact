@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Principal from './componentes/Principal';
 import ListaIndicadores from './componentes/lista_indicadores';
-import PruebaGrafica from './componentes/prueba_grafica';
 import './App.css';
 
 class App extends Component {
@@ -10,29 +9,19 @@ class App extends Component {
     this.state={
       consulta_del_servidor: [
         {
-          codigo: 'A0001',
-          descrip: 'artículo 1',
-          cantidad: 11
+          codigo: 'A01',
+          descrip: 'Tornillos',
+          cantidad: 7
         },
         {
-          codigo: 'A0002',
-          descrip: 'artículo 2',
-          cantidad: 22
+          codigo: 'A02',
+          descrip: 'Tuercas',
+          cantidad: 2
         },
         {
-          codigo: 'A0003',
-          descrip: 'artículo 3',
-          cantidad: 33
-        },
-        {
-          codigo: 'A0004',
-          descrip: 'artículo 4',
-          cantidad: 44
-        },
-        {
-          codigo: 'A0005',
-          descrip: 'artículo 5',
-          cantidad: 55
+          codigo: 'A03',
+          descrip: 'Martillos',
+          cantidad: 5
         }
       ],
       consulta_indicadores: [
@@ -57,8 +46,6 @@ class App extends Component {
         <Principal parametros={this.state.consulta_del_servidor}/>
         <hr/>
         <ListaIndicadores param_indicadores={this.state.consulta_indicadores}/>
-        <hr/>
-        <PruebaGrafica/>
       </div>
     );
   }
